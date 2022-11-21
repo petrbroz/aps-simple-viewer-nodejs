@@ -32,7 +32,7 @@ async function onModelSelected(viewer, urn) {
     const potreeExtension = viewer.getExtension('PotreeExtension');
     let position = new THREE.Vector3(0, 0, -25);
     let scale = new THREE.Vector3(5, 5, 5);
-    const pointcloud = await potreeExtension.loadPointCloud('my-pointcloud', '/PotreeExtension/data/lion_takanawa/cloud.js', position, scale);
+    const pointcloud = await potreeExtension.loadPointCloud('my-pointcloud', 'https://brozp.s3.eu-west-2.amazonaws.com/potree/lion_takanawa/cloud.js', position, scale);
     const bbox = pointcloud.boundingBox.clone().expandByVector(scale);
     viewer.navigation.fitBounds(false, bbox);
 }
