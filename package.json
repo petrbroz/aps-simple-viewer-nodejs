@@ -12,7 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "forge-apis": "^0.9.1"
+    "forge-apis": "^0.9.1",
+    "socket.io": "^4.5.3"
   },
   "devDependencies": {
     "@types/forge-viewer": "^7.48.0"
